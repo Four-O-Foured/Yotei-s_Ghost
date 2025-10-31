@@ -67,6 +67,12 @@ const App = () => {
       ease: "power1.out",
     });
 
+      gsap.to(".scrollDown", {
+      x: 0,
+      delay: 0.8,
+      ease: "power1.out",
+    });
+
     const main = document.querySelector(".main");
 
     main?.addEventListener("mousemove", (e) => {
@@ -116,7 +122,7 @@ const App = () => {
             </mask>
           </defs>
           <image
-            href="./bg.png"
+            href="/bg.png"
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice"
@@ -144,7 +150,7 @@ const App = () => {
             <div className="images w-full h-screen overflow-hidden relative">
               <img
                 className=" absolute bg top-0 left-0 w-full h-full object-cover rotate-[-10deg] scale-[1.5]"
-                src="./bg2.jpg"
+                src="/bg2.jpg"
                 alt=""
               />
 
@@ -162,18 +168,18 @@ const App = () => {
 
               <img
                 className=" absolute leaves scale-105 top-0 left-0 w-full h-full object-cover"
-                src="./leaves3.png"
+                src="/leaves3.png"
                 alt=""
               />
               <img
                 className=" absolute samurai top-0 left-[50%] w-170 translate-y-300 h-full object-cover translate-x-[-50%]"
-                src="./samurai.png"
+                src="/samurai.png"
                 alt=""
               />
             </div>
 
             <div className="absolute bottomBar h-25 overflow-hidden w-full bottom-0 left-0 px-8 py-4 z-20 bg-linear-to-t from-black to-transparent">
-              <div className="flex scrollDown gap-3 items-center">
+              <div className="flex scrollDown -translate-x-100 gap-3 items-center">
                 <i className="ri-arrow-down-line text-4xl animate-bounce"></i>
                 <h1 className="text-black text-2xl">Scroll Down</h1>
               </div>
@@ -183,12 +189,12 @@ const App = () => {
           <div className="page2 w-full h-screen bg-black">
             <div className="w-full h-screen flex relative overflow-hidden">
               <div className="h-screen flex items-center w-1/2">
-                <img src="./samurai_2.png" alt="" />
+                <img src="/samurai_2.png" alt="" />
               </div>
               <div className="h-screen w-1/2 flex flex-col justify-center items-center">
                 <div className="w-2/3 h-2/3 cntnr flex flex-col gap-5 justify-center relative ">
                   <div className="w-full flex items-center">
-                    <img src="./ps5.png" className="w-1/2 " alt="" />
+                    <img src="/ps5.png" className="w-1/2 " alt="" />
                     <h1 className="text-[2.5rem] text-shadow-white text-amber-50 ">
                       Exclusive
                     </h1>
@@ -213,7 +219,7 @@ const App = () => {
 
               <img
                 className="w-full h-screen scale-105 absolute bloodscatter top-0 left-0 object-cover"
-                src="./bloodScatter.png"
+                src="/bloodScatter.png"
                 alt=""
               />
             </div>
